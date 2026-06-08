@@ -134,3 +134,42 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
         }
     });
 });
+// ── Mobile Nav Hamburger ──
+const hamburger = document.querySelector('.nav-hamburger');
+const drawer    = document.querySelector('.nav-drawer');
+const drawerLinks = document.querySelectorAll('.nav-drawer a');
+
+if (hamburger && drawer) {
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        drawer.classList.toggle('open');
+        document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // أغلق الـ drawer عند الضغط على أي رابط
+    drawerLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('open');
+            drawer.classList.remove('open');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // أغلق عند الضغط خارج الـ drawer
+    drawer.addEventListener('click', (e) => {
+        if (e.target === drawer) {
+            hamburger.classList.remove('open');
+            drawer.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+    });
+}
+
+// ── Navbar scroll effect ──
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+        navbar.classList.toggle('scrolled', window.scrollY > 30);
+    }
+});

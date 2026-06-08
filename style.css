@@ -900,6 +900,33 @@ section {
     gap: 12px;
 }
 
+.testimonial-card{
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    height: 100%;
+}
+
+.stars{
+    color: gold;
+    margin-bottom: 10px;
+}
+.testimonials-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.testimonial-card-item{
+    display: none;
+}
+
+.testimonial-card-item.active{
+    display: block;
+}
+
+
 .author-avatar {
     width: 44px;
     height: 44px;

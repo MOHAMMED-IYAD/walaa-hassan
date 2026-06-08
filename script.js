@@ -1,175 +1,240 @@
-// ── NAV SCROLL ──
-const nav = document.getElementById("navbar");
-window.addEventListener("scroll", () => {
-    nav.classList.toggle("scrolled", window.scrollY > 50);
-});
+window.addEventListener("DOMContentLoaded", function () {
 
-// ── REVEAL ──
-const revealEls = document.querySelectorAll(".reveal, .reveal-left");
-const io = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((e) => {
-            if (e.isIntersecting) {
-                e.target.classList.add("visible");
-            }
-        });
-    },
-    { threshold: 0.12 },
-);
-revealEls.forEach((el) => io.observe(el));
+    // ── NAV SCROLL ──
+    const nav = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+        if (nav) nav.classList.toggle("scrolled", window.scrollY > 50);
+    });
 
-// ── PAIN LIST STAGGER ──
-const painItems = document.querySelectorAll(".pain-list li");
-const painObs = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((e) => {
-            if (e.isIntersecting) {
-                painItems.forEach((li, i) => {
-                    setTimeout(() => li.classList.add("visible"), i * 100);
-                });
-            }
-        });
-    },
-    { threshold: 0.3 },
-);
-if (painItems.length) painObs.observe(painItems[0].closest("ul"));
-
-// ── COUNTERS ──
-function animCounter(el, target) {
-    let count = 0;
-    const step = Math.ceil(target / 60);
-    const interval = setInterval(() => {
-        count = Math.min(count + step, target);
-        el.textContent = "+" + count;
-        if (count >= target) clearInterval(interval);
-    }, 30);
-}
-const counterObs = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((e) => {
-            if (e.isIntersecting) {
-                e.target.querySelectorAll(".num[data-target]").forEach((el) => {
-                    animCounter(el, parseInt(el.dataset.target));
-                });
-                counterObs.unobserve(e.target);
-            }
-        });
-    },
-    { threshold: 0.3 },
-);
-document
-    .querySelectorAll(".pain-counter")
-    .forEach((el) => counterObs.observe(el));
-
-// ── FORM SUBMIT ──
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    const name = this.querySelector("input[type=text]").value;
-    const phone = this.querySelector("input[type=tel]").value;
-    const msg = encodeURIComponent(
-        `مرحبا ولاء،\nاسمي: ${name}\n\nأريد أحجز استشارة 🙏`,
+    // ── REVEAL ──
+    const revealEls = document.querySelectorAll(".reveal, .reveal-left");
+    const io = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((e) => {
+                if (e.isIntersecting) {
+                    e.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.12 }
     );
-    const pref = this.querySelector("input[name=contact_pref]:checked")?.value;
-    if (pref === "whatsapp" || !pref) {
-        window.open(`https://wa.me/966500000000?text=${msg}`, "_blank");
+    revealEls.forEach((el) => io.observe(el));
+
+    // ── PAIN LIST STAGGER ──
+    const painItems = document.querySelectorAll(".pain-list li");
+    const painObs = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((e) => {
+                if (e.isIntersecting) {
+                    painItems.forEach((li, i) => {
+                        setTimeout(() => li.classList.add("visible"), i * 100);
+                    });
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
+
+    if (painItems.length) {
+        painObs.observe(painItems[0].closest("ul"));
     }
-    document.getElementById("formSuccess").classList.add("show");
-    this.reset();
-});
 
-// ── LANG TOGGLE ──
-// ─────────────────────────────
-// LANGUAGE SYSTEM (AR / EN)
-// ─────────────────────────────
+    // ── COUNTERS ──
+    function animCounter(el, target) {
+        let count = 0;
+        const step = Math.ceil(target / 60);
 
-let currentLang = localStorage.getItem("lang") || "ar";
+        const interval = setInterval(() => {
+            count = Math.min(count + step, target);
+            el.textContent = "+" + count;
+            if (count >= target) clearInterval(interval);
+        }, 30);
+    }
 
-document.addEventListener("DOMContentLoaded", () => {
-    applyLanguage(currentLang);
-});
+    const counterObs = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((e) => {
+                if (e.isIntersecting) {
+                    e.target.querySelectorAll(".num[data-target]").forEach((el) => {
+                        animCounter(el, parseInt(el.dataset.target));
+                    });
+                    counterObs.unobserve(e.target);
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
 
-function toggleLang() {
-    currentLang = currentLang === "ar" ? "en" : "ar";
-    localStorage.setItem("lang", currentLang);
-    applyLanguage(currentLang);
-}
-function applyLanguage(lang) {
-    const isAr = lang === "ar";
+    document.querySelectorAll(".pain-counter").forEach((el) => counterObs.observe(el));
 
-    document.documentElement.lang = lang;
-    document.documentElement.dir = isAr ? "rtl" : "ltr";
+    // ── FORM SUBMIT ──
+    document.getElementById("contactForm")?.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-    document.querySelectorAll("[data-ar]").forEach((el) => {
-        const arText = el.dataset.ar;
-        const enText = el.dataset.en;
+        const name = this.querySelector("input[type=text]")?.value || "";
+        const phone = this.querySelector("input[type=tel]")?.value || "";
+        const email = this.querySelector("input[type=email]")?.value || "";
 
-        if (!arText || !enText) return;
+        const msg =
+`مرحبا ولاء
+اسمي: ${name}
+رقمي: ${phone}
+إيميلي: ${email}
 
-        // إذا النص يحتوي HTML مثل <br> أو <em>
-        if (arText.includes("<") || enText.includes("<")) {
-            el.innerHTML = isAr ? arText : enText;
-        } else {
-            el.textContent = isAr ? arText : enText;
+أريد أحجز استشارة 🙏`;
+
+        const pref = this.querySelector("input[name=contact_pref]:checked")?.value;
+
+        const whatsappLink = `https://wa.me/00972592663938?text=${encodeURIComponent(msg)}`;
+
+        const mailLink =
+            "https://mail.google.com/mail/?view=cm&fs=1" +
+            "&to=wala.hassan1994@gmail.com" +
+            "&su=" + encodeURIComponent("طلب استشارة") +
+            "&body=" + encodeURIComponent(msg);
+
+        if (pref === "whatsapp") {
+            window.open(whatsappLink, "_blank");
         }
-    });
 
-    document.title = isAr
-        ? "ولاء حسان | خبيرة البراند الشخصي"
-        : "Walaa Hassan | Personal Branding Expert";
-
-    const btn = document.querySelector(".lang-switch");
-    if (btn) btn.textContent = isAr ? "EN" : "AR";
-
-    document.body.classList.toggle("lang-ar", isAr);
-    document.body.classList.toggle("lang-en", !isAr);
-}
-
-// ── SMOOTH SCROLL ──
-document.querySelectorAll('a[href^="#"]').forEach((a) => {
-    a.addEventListener("click", (e) => {
-        const target = document.querySelector(a.getAttribute("href"));
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
+        else if (pref === "email") {
+            window.open(mailLink, "_blank");
         }
+
+        else if (pref === "call") {
+            window.location.href = "tel:+972592663938";
+        }
+
+        else if (pref === "both") {
+            window.open(whatsappLink, "_blank");
+            window.open(mailLink, "_blank");
+        }
+
+        else {
+            alert("اختار طريقة التواصل أولاً");
+        }
+
+        document.getElementById("formSuccess")?.classList.add("show");
+        this.reset();
     });
-});
-// ── Mobile Nav Hamburger ──
-const hamburger = document.querySelector('.nav-hamburger');
-const drawer    = document.querySelector('.nav-drawer');
-const drawerLinks = document.querySelectorAll('.nav-drawer a');
 
-if (hamburger && drawer) {
+    // ── LANGUAGE SYSTEM ──
+    let currentLang = localStorage.getItem("lang") || "ar";
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('open');
-        drawer.classList.toggle('open');
-        document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
-    });
+    function applyLanguage(lang) {
+        const isAr = lang === "ar";
 
-    // أغلق الـ drawer عند الضغط على أي رابط
-    drawerLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('open');
-            drawer.classList.remove('open');
-            document.body.style.overflow = '';
+        document.documentElement.lang = lang;
+        document.documentElement.dir = isAr ? "rtl" : "ltr";
+
+        document.querySelectorAll("[data-ar]").forEach((el) => {
+            const arText = el.dataset.ar;
+            const enText = el.dataset.en;
+
+            if (!arText || !enText) return;
+
+            if (arText.includes("<") || enText.includes("<")) {
+                el.innerHTML = isAr ? arText : enText;
+            } else {
+                el.textContent = isAr ? arText : enText;
+            }
+        });
+
+        document.title = isAr
+            ? "ولاء حسان | خبيرة البراند الشخصي"
+            : "Walaa Hassan | Personal Branding Expert";
+
+        const btn = document.querySelector(".lang-switch");
+        if (btn) btn.textContent = isAr ? "EN" : "AR";
+
+        document.body.classList.toggle("lang-ar", isAr);
+        document.body.classList.toggle("lang-en", !isAr);
+    }
+
+    applyLanguage(currentLang);
+
+    window.toggleLang = function () {
+        currentLang = currentLang === "ar" ? "en" : "ar";
+        localStorage.setItem("lang", currentLang);
+        applyLanguage(currentLang);
+    };
+
+    // ── SMOOTH SCROLL ──
+    document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+            const target = document.querySelector(a.getAttribute("href"));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
         });
     });
 
-    // أغلق عند الضغط خارج الـ drawer
-    drawer.addEventListener('click', (e) => {
-        if (e.target === drawer) {
-            hamburger.classList.remove('open');
-            drawer.classList.remove('open');
-            document.body.style.overflow = '';
-        }
-    });
-}
+    // ── MOBILE MENU ──
+    const hamburger = document.querySelector(".nav-hamburger");
+    const drawer = document.querySelector(".nav-drawer");
+    const drawerLinks = document.querySelectorAll(".nav-drawer a");
 
-// ── Navbar scroll effect ──
-window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    if (navbar) {
-        navbar.classList.toggle('scrolled', window.scrollY > 30);
+    if (hamburger && drawer) {
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("open");
+            drawer.classList.toggle("open");
+            document.body.style.overflow = drawer.classList.contains("open") ? "hidden" : "";
+        });
+
+        drawerLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("open");
+                drawer.classList.remove("open");
+                document.body.style.overflow = "";
+            });
+        });
+
+        drawer.addEventListener("click", (e) => {
+            if (e.target === drawer) {
+                hamburger.classList.remove("open");
+                drawer.classList.remove("open");
+                document.body.style.overflow = "";
+            }
+        });
+    }
+
+
+const swiper = new Swiper(".testimonialsSwiper", {
+
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
+    speed: 900, // 🔥 حركة ناعمة
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    grabCursor: true, // drag بالماوس
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        992: {
+            slidesPerView: 3
+        }
     }
 });
+
+
+});
+
+

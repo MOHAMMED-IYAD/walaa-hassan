@@ -976,6 +976,16 @@ section {
     gap: 20px;
 }
 
+.testimonial-name {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.testimonial-name span {
+    color: var(--gold);
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
 .testimonial-card-item {
     display: none;
 }

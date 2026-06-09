@@ -1,794 +1,783 @@
-    <!doctype html>
-    <html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="ar" dir="rtl">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ولاء حسان | خبيرة البراند الشخصي</title>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ولاء حسان | خبيرة البراند الشخصي</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-    <body>
-        <!-- NAV -->
-     <nav id="navbar">
 
-    <!-- checkbox hack -->
-    <input type="checkbox" id="nav-toggle" hidden>
+<body>
+    <!-- NAV -->
+    <nav id="navbar">
 
-    <div class="container nav-inner">
+        <input type="checkbox" id="nav-toggle" hidden>
 
-        <!-- LOGO -->
-        <a href="#hero" class="nav-logo">
-            <img src="logo.avif" alt="Logo" class="logo-img" />
-        </a>
+        <div class="container nav-inner">
 
-        <!-- DESKTOP LINKS -->
-        <div class="nav-links">
-            <a href="#hook">الخدمات</a>
-            <a href="#why">من أنا</a>
-            <a href="#process">الآلية</a>
-            <a href="#testimonials">آراء العملاء</a>
-            <a href="#package">الباقة</a>
-            <a href="#contact">تواصل</a>
-        </div>
+            <!-- LOGO -->
+            <a href="#hero" class="nav-logo">
+                <img src="logo.avif" alt="Logo" class="logo-img" />
+            </a>
 
-        <!-- ACTIONS -->
-        <div class="nav-actions">
+            <!-- DESKTOP LINKS -->
+            <div class="nav-links">
 
-            <button class="lang-switch">EN</button>
+                <a href="#hook" data-ar="الخدمات" data-en="Services">الخدمات</a>
 
-            <a href="#contact" class="nav-cta">احجز الآن</a>
+                <a href="#why" data-ar="من أنا" data-en="About Me">من أنا</a>
 
-            <!-- burger -->
-            <label for="nav-toggle" class="nav-hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+                <a href="#process" data-ar="الآلية" data-en="Process">الآلية</a>
+                <a href="#package" data-ar="الباقة" data-en="Package">الباقة</a>
 
-        </div>
+                <a href="#testimonials" data-ar="آراء العملاء" data-en="Testimonials">آراء العملاء</a>
 
-    </div>
 
-    <!-- MOBILE MENU -->
-    <div class="nav-drawer">
 
-        <!-- overlay card -->
-        <div class="nav-drawer-content">
+                <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
 
-            <!-- close button -->
-            <label for="nav-toggle" class="close-btn">✕</label>
+            </div>
 
-            <a href="#hook">الخدمات</a>
-            <a href="#why">من أنا</a>
-            <a href="#process">الآلية</a>
-            <a href="#testimonials">آراء العملاء</a>
-            <a href="#package">الباقة</a>
-            <a href="#contact">تواصل</a>
+            <!-- ACTIONS -->
+            <div class="nav-actions">
 
-            <a href="#contact" class="nav-cta">احجز الآن</a>
+                <button class="lang-switch">EN</button>
+
+                <a href="#contact" class="nav-cta" data-ar="احجز الآن" data-en="Book Now">
+                    احجز الآن
+                </a>
+
+                <!-- burger -->
+                <label for="nav-toggle" class="nav-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+            </div>
 
         </div>
 
-    </div>
+        <!-- MOBILE MENU -->
+        <div class="nav-drawer">
 
-</nav>
+            <div class="nav-drawer-content">
 
-        <!-- HERO -->
-        <section id="hero">
-            
+                <label for="nav-toggle" class="close-btn">✕</label>
 
-            <div class="container">
-                <div class="row align-items-center">
+                <a href="#hook" data-ar="الخدمات" data-en="Services">الخدمات</a>
+                <a href="#why" data-ar="من أنا" data-en="About Me">من أنا</a>
+                <a href="#process" data-ar="الآلية" data-en="Process">الآلية</a>
+                <a href="#testimonials" data-ar="آراء العملاء" data-en="Testimonials">آراء العملاء</a>
+                <a href="#package" data-ar="الباقة" data-en="Package">الباقة</a>
+                <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
 
-                    <!-- TEXT -->
-                    <div class="col-lg-6 hero-content">
+                <a href="#contact" class="nav-cta" data-ar="احجز الآن" data-en="Book Now">
+                    احجز الآن
+                </a>
 
-                        
+            </div>
 
-                        <h1 class="hero-name">
-    حوّل <em>اسمك</em><br>
-    <span class="brand-line">إلى براند</span><br>
-    يجذب العملاء
-</h1>
+        </div>
 
-                        <p class="hero-subtitle"
-                            data-ar="أبني لك براند شخصي واضح ومحتوى قوي يحوّل وجودك الرقمي إلى فرص حقيقية وصفقات كل شهر."
-                            data-en="I build you a clear personal brand and powerful content that turns your digital presence into real opportunities and consistent monthly deals.">
-                            أبني لك براند شخصي واضح ومحتوى قوي يحوّل وجودك الرقمي إلى فرص حقيقية وصفقات كل شهر.
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+
+
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- TEXT -->
+                <div class="col-lg-6 hero-content">
+
+
+
+                    <h1 class="hero-name"
+                        data-ar="حوّل <em>اسمك</em><br><span class='brand-line'>إلى براند</span><br>يجذب العملاء"
+                        data-en="Turn <em>Your Name</em><br><span class='brand-line'>Into a Brand</span><br>That Attracts Clients">
+
+                        حوّل <em>اسمك</em><br>
+                        <span class="brand-line">إلى براند</span><br>
+                        يجذب العملاء
+                    </h1>
+
+                    <p class="hero-subtitle"
+                        data-ar="أبني لك براند شخصي واضح ومحتوى قوي يحوّل وجودك الرقمي إلى فرص حقيقية وصفقات كل شهر."
+                        data-en="I build you a clear personal brand and powerful content that turns your digital presence into real opportunities and consistent monthly deals.">
+                        أبني لك براند شخصي واضح ومحتوى قوي يحوّل وجودك الرقمي إلى فرص حقيقية وصفقات كل شهر.
+                    </p>
+
+                    <div class="hero-btns">
+
+                        <a href="#contact" class="btn-hero-primary" data-ar="احجز استشارتك الآن ←"
+                            data-en="Book Your Free Consultation ←">
+                            احجز استشارتك الآن ←
+                        </a>
+
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div class="stat-item">
+                            <div class="stat-num">+<span>500</span></div>
+                            <div class="stat-label" data-ar="علامة تجارية" data-en="Brands">
+                                علامة تجارية
+                            </div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-num">+<span>140</span></div>
+                            <div class="stat-label" data-ar="عميل ساعدتهم" data-en="Clients Helped">
+                                عميل ساعدتهم
+                            </div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-num"><span>6</span></div>
+                            <div class="stat-label" data-ar="سنوات خبرة" data-en="Years of Experience">
+                                سنوات خبرة
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="hero-img-wrap">
+
+                        <div class="hero-img-frame">
+                            <div class="hero-img-placeholder">
+                                <img src="hero.avif" alt="Walaa Hassan" class="hero-img" />
+                            </div>
+                        </div>
+
+                        <div class="hero-badge">
+                            <div class="hero-badge-icon">⭐</div>
+                            <div class="hero-badge-text">
+                                <strong>4.9 / 5</strong>
+                                <span data-ar="تقييم العملاء" data-en="Client Rating">
+                                    تقييم العملاء
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="scroll-indicator" data-ar='<span>اكتشف</span><div class="scroll-line"></div>'
+            data-en='<span>Discover</span><div class="scroll-line"></div>'>
+            <span>اكتشف</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+    <!-- HOOK / PROBLEM -->
+    <section id="hook">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+
+
+
+                <h2 class="section-title"
+                    data-ar='لو وجودك الرقمي ما يصنع لك عملاء<br><em>فالمشكلة في الاستراتيجية</em>'
+                    data-en='If Your Online Presence Is Not Bringing Clients<br><em>The Problem Is The Strategy</em>'>
+                    لو وجودك الرقمي ما يصنع لك عملاء<br /><em>فالمشكلة في الاستراتيجية</em>
+                </h2>
+
+                <p class="section-sub mx-auto" data-ar="ليست مشكلة كتابة إنها مشكلة نظام ورؤية واضحة"
+                    data-en="It's Not A Writing Problem — It's A System And Strategy Problem">
+                    ليست مشكلة كتابة إنها مشكلة نظام ورؤية واضحة
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4 reveal">
+                    <div class="hook-card">
+
+                        <div class="hook-icon">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+
+                        <h4 data-ar="تجلس قدام الشاشة وما تكتب"
+                            data-en="You Sit In Front Of The Screen And Can't Write">
+                            تجلس قدام الشاشة وما تكتب
+                        </h4>
+
+                        <p data-ar="الفكرة تجيك وتختفي، والمنشور يبقى فراغ. مو مشكلة موهبة — مشكلة نظام واضح للمحتوى."
+                            data-en="Ideas come and go, but the post stays empty. It's not a talent problem — it's a content system problem.">
+                            الفكرة تجيك وتختفي، والمنشور يبقى فراغ. مو مشكلة موهبة — مشكلة
+                            نظام واضح للمحتوى.
                         </p>
 
-                        <div class="hero-btns">
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="hook-card">
+
+                        <div class="hook-icon">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+
+                        <h4 data-ar="تنشر بدون خطة وما في نتائج" data-en="You Post Without A Plan And Get No Results">
+                            تنشر بدون خطة وما في نتائج
+                        </h4>
+
+                        <p data-ar="المحتوى العشوائي لا يبني براند. بدون استراتيجية واضحة، كل جهدك يضيع في الزحمة."
+                            data-en="Random content doesn't build a brand. Without a clear strategy, all your effort gets lost in the noise.">
+                            المحتوى العشوائي لا يبني براند. بدونك استراتيجية واضحة، كل جهدك
+                            يضيع في الزحمة.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="hook-card">
+
+                        <div class="hook-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <h4 data-ar="ما عندك وقت تبني حضورك" data-en="You Don't Have Time To Build Your Presence">
+                            ما عندك وقت تبني حضورك
+                        </h4>
+
+                        <p data-ar="أنت مشغول بشغلك الأساسي. نظام المحتوى الصح يختصر عليك الوقت ويضاعف النتائج."
+                            data-en="You're busy with your main work. The right content system saves time and multiplies results.">
+                            أنت مشغول بشغلك الأساسي. نظام المحتوى الصح يختصر عليك الوقت
+                            ويضاعف النتائج.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- PAIN -->
+    <section id="pain">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT SIDE -->
+                <div class="col-lg-6 mb-5 mb-lg-0 reveal-left">
+
+                    <h2 class="section-title" data-ar='كل يوم بدون<br><em>استراتيجية</em> تخسر فيه'
+                        data-en='Every Day Without A<br><em>Strategy</em> Costs You'>
+                        كل يوم بدون<br /><em>استراتيجية</em> تخسر فيه
+                    </h2>
+
+                    <ul class="pain-list mt-4">
+
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <span data-ar="الوقت يضيع والفرص تفوت"
+                                data-en="Time is wasted and opportunities are missed">
+                                الوقت يضيع والفرص تفوت
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <span data-ar="المنافس يكبر وأنت مكانك"
+                                data-en="Your competitors grow while you stay in the same place">
+                                المنافس يكبر وأنت مكانك
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <span data-ar="اسمك يختفي بين الزحمة" data-en="Your name gets lost in the crowd">
+                                اسمك يختفي بين الزحمة
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <span data-ar="تعب من العشوائية والتخبط" data-en="Tired of randomness and confusion">
+                                تعب من العشوائية والتخبط
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <span data-ar="حسابات تكبر وأنت مكانك"
+                                data-en="Other accounts grow while yours stays still">
+                                حسابات تكبر وأنت مكانك
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <span data-ar="تسأل نفسك: ليه ما في نتائج؟"
+                                data-en="You keep asking yourself: Why am I not getting results?">
+                                تسأل نفسك: ليه ما في نتائج؟
+                            </span>
+                        </li>
+
+                    </ul>
+
+                    <div class="pain-counter mt-4">
+
+                        <div class="pain-counter-item reveal">
+                            <div class="num" data-target="140">0</div>
+                            <div class="lbl" data-ar="خبير بنيت براندهم" data-en="Experts I Helped Build Their Brand">
+                                خبير بنيت براندهم
+                            </div>
+                        </div>
+
+                        <div class="pain-counter-item reveal">
+                            <div class="num" data-target="500">0</div>
+                            <div class="lbl" data-ar="علامات تجارية" data-en="Brands I Helped Build">
+                                علامات تجارية
+                            </div>
+                        </div>
+
+                        <div class="pain-counter-item reveal">
+                            <div class="num" data-target="6">0</div>
+                            <div class="lbl" data-ar="سنوات خبرة" data-en="Years of Experience">
+                                سنوات خبرة
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="col-lg-6 reveal">
+
+                    <div class="pain-box" style="
+                        background: rgba(255,255,255,0.06);
+                        border: 1px solid rgba(255,255,255,0.12);
+                        border-radius: 24px;
+                        padding: 40px;
+                     ">
+
+                        <h3 data-ar='تخيل اسمك يكون <span style="color: var(--gold)">براند حقيقي</span>'
+                            data-en='Imagine Your Name Becoming A <span style="color: var(--gold)">Real Brand</span>'>
+                            تخيل اسمك يكون
+                            <span style="color: var(--gold)">براند حقيقي</span>
+                        </h3>
+
+                        <div style="display:flex;flex-direction:column;gap:14px; margin-top:20px">
+
+                            <p data-ar="يجذب العملاء وأنت نايم بمحتوى يدخل عقل جمهورك بسرعة"
+                                data-en="Attract clients even while you sleep with content that reaches your audience quickly">
+                                يجذب العملاء وأنت نايم بمحتوى يدخل عقل جمهورك بسرعة
+                            </p>
+
+                            <p data-ar="حضور مهني قوي يخلي أصحاب القرار يشوفوك ويثقوا فيك"
+                                data-en="A strong professional presence that makes decision-makers notice and trust you">
+                                حضور مهني قوي يخلي أصحاب القرار يشوفوك ويثقوا فيك
+                            </p>
+
+                            <p data-ar="الفرص تجيك بدون ما تدور عليها أو تطارد أحد"
+                                data-en="Opportunities come to you without chasing anyone">
+                                الفرص تجيك بدون ما تدور عليها أو تطارد أحد
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY ME -->
+    <section id="why">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-5 reveal">
+                    <div class="why-img">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 reveal">
+
+
+
+
+                    <h2 class="section-title mb-4" data-ar='على مدى <em>6 سنوات</em><br />كنت معهم من البداية'
+                        data-en='Over <em>6 Years</em><br />I Have Been With Them'>
+                        على مدى <em>6 سنوات</em><br />
+                        كنت معهم من البداية
+                    </h2>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+
+                            <h5 data-ar="+500 علامة تجارية" data-en="+500 Brands">
+                                +500 علامة تجارية
+                            </h5>
+
+                            <p data-ar="اشتغلت مع أكثر من 500 علامة تجارية وساعدتهم يبنوا حضور رقمي حقيقي ومؤثر."
+                                data-en="I worked with over 500 brands and helped them build a real impactful digital presence.">
+                                اشتغلت مع أكثر من 500 علامة تجارية وساعدتهم يبنوا حضور رقمي حقيقي ومؤثر.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+
+                            <h5 data-ar="+140 خبير على لينكدإن وإكس" data-en="+140 Experts on LinkedIn and X">
+                                +140 خبير على لينكدان وإكس
+                            </h5>
+
+                            <p data-ar="بنيت ظهور أكثر من 140 خبير، رفعت تأثيرهم ووصّلتهم لجمهورهم الصح."
+                                data-en="I built the presence of 140+ experts and connected them to the right audience.">
+                                بنيت ظهور أكثر من 140 خبير، رفعت تأثيرهم ووصّلتهم لجمهورهم الصح.
+                            </p>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+
+                            <h5 data-ar="من نشر عشوائي إلى براند مقنع" data-en="From Random Posting To A Strong Brand">
+                                من نشر عشوائي إلى براند مقنع
+                            </h5>
+
+                            <p data-ar="حوّلت حساباتهم من محتوى عشوائي إلى نظام متكامل يجذب الفرص باستمرار."
+                                data-en="I turned their accounts from random posting into a system that consistently attracts opportunities.">
+                                حوّلت حساباتهم من محتوى عشوائي إلى نظام متكامل يجذب الفرص باستمرار.
+                            </p>
+
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+
+                            <h5 data-ar="أنا لا أكتب لك — أبني لك نظاماً"
+                                data-en="I Don’t Just Write — I Build A System">
+                                أنا لا أكتب لك — أبني لك نظاماً
+                            </h5>
+
+                            <p data-ar="نظام واضح، مستهدف، مبني على استراتيجية تجعل اسمك أصلاً رقمياً يكبر مع الوقت."
+                                data-en="A clear targeted system built on strategy that turns your name into a growing digital asset.">
+                                نظام واضح، مستهدف، مبني على استراتيجية تجعل اسمك أصلاً رقمياً يكبر مع الوقت.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+        <div class="container">
+
+            <div class="text-center mb-5 reveal">
+
+
+
+                <h2 class="section-title" data-ar='نشتغل مع بعض<br /><em>بخطوات واضحة</em>'
+                    data-en='We Work Together<br /><em>With Clear Steps</em>'>
+                    نشتغل مع بعض<br />
+                    <em>بخطوات واضحة</em>
+                </h2>
+
+                <p class="section-sub mx-auto" data-ar="هذه الآلية تختصر عليك سنوات من التجربة العشوائية"
+                    data-en="This process saves you years of trial and error">
+                    هذه الآلية تختصر عليك سنوات من التجربة العشوائية
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3 reveal">
+                    <div class="process-step">
+
+                        <div class="step-num">01</div>
+
+                        <div class="step-icon">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+
+                        <h4 data-ar="هويتك الرقمية" data-en="Your Digital Identity">
+                            هويتك الرقمية
+                        </h4>
+
+                        <p data-ar="نحدد هويتك ونوضح رسالتك ونحدد جمهورك المستهدف بدقة"
+                            data-en="We define your identity, clarify your message, and identify your target audience precisely">
+                            نحدد هويتك ونوضح رسالتك ونحدد جمهورك المستهدف بدقة
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 reveal">
+                    <div class="process-step">
+
+                        <div class="step-num">02</div>
+
+                        <div class="step-icon">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+
+                        <h4 data-ar="الاستراتيجية" data-en="Strategy">
+                            الاستراتيجية
+                        </h4>
+
+                        <p data-ar="نصمم استراتيجيتك الكاملة ونبني محتوى يبيع قبل ما تتكلم"
+                            data-en="We design your full strategy and create content that sells before you speak">
+                            نصمم استراتيجيتك الكاملة ونبني محتوى يبيع قبل ما تتكلم
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 reveal">
+                    <div class="process-step">
+
+                        <div class="step-num">03</div>
+
+                        <div class="step-icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+
+                        <h4 data-ar="تهيئة الحسابات" data-en="Account Optimization">
+                            تهيئة الحسابات
+                        </h4>
+
+                        <p data-ar="نهيئ لينكدان وإكس ليكونا مغناطيس يجذب العملاء باستمرار"
+                            data-en="We optimize LinkedIn and X to become a magnet for consistent clients">
+                            نهيئ لينكدان وإكس ليكونا مغناطيس يجذب العملاء باستمرار
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 reveal">
+                    <div class="process-step">
+
+                        <div class="step-num">04</div>
+
+                        <div class="step-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+
+                        <h4 data-ar="النمو المستدام" data-en="Sustainable Growth">
+                            النمو المستدام
+                        </h4>
+
+                        <p data-ar="نربط الحضور الرقمي بالهدف التجاري ونتابع معك للنمو المستمر"
+                            data-en="We connect your digital presence to your business goals and support continuous growth">
+                            نربط الحضور الرقمي بالهدف التجاري ونتابع معك للنمو المستمر
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGE -->
+    <section id="package">
+        <div class="container">
+
+            <div class="text-center mb-5 reveal">
+
+
+
+                <h2 class="section-title" data-ar='باقة <em>التمكين الرقمي</em>'
+                    data-en='Digital <em>Empowerment Package</em>'>
+                    باقة <em>التمكين الرقمي</em>
+                </h2>
+
+                <p class="section-sub mx-auto"
+                    data-ar="مصممة لكل خبير وصاحب خدمة يريد التحول من محتوى عشوائي إلى براند قوي يجذب فرصاً باستمرار"
+                    data-en="Designed for every expert and service provider who wants to move from random content to a strong brand that attracts consistent opportunities">
+                    مصممة لكل خبير وصاحب خدمة يريد التحول من محتوى عشوائي إلى براند قوي
+                    يجذب فرصاً باستمرار
+                </p>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8 reveal">
+
+                    <div class="package-card">
+
+                        <div class="package-badge" data-ar="الأكثر طلباً ✦" data-en="Most Requested ✦">
+                            الأكثر طلباً ✦
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col">
+
+                                <p class="package-title" data-ar="التمكين الرقمي الشامل"
+                                    data-en="Full Digital Empowerment">
+                                    التمكين الرقمي الشامل
+                                </p>
+
+                                <p class="package-sub" data-ar="كل ما تحتاجه لبناء براند رقمي يصنع لك دخلاً مستداماً"
+                                    data-en="Everything you need to build a digital brand that generates sustainable income">
+                                    كل ما تحتاجه لبناء براند رقمي يصنع لك دخلاً مستداماً
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <ul class="package-list">
+
+                                    <li>
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span data-ar="براند شخصي واضح ومميز" data-en="Clear and unique personal brand">
+                                            براند شخصي واضح ومميز
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span data-ar="استراتيجية محتوى شاملة" data-en="Comprehensive content strategy">
+                                            استراتيجية محتوى شاملة
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span data-ar="تطوير كامل لينكدان وإكس"
+                                            data-en="Full LinkedIn and X optimization">
+                                            تطوير كامل لينكدان وإكس
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span data-ar="قصة مهنية مؤثرة وجذابة"
+                                            data-en="Powerful and engaging professional story">
+                                            قصة مهنية مؤثرة وجذابة
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span data-ar="خطة نمو مفصّلة" data-en="Detailed growth plan">
+                                            خطة نمو مفصّلة
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col-md-6">
+                                <ul class="package-list">
+
+                                    <li>
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span data-ar="نظام محتوى طويل الأمد" data-en="Long-term content system">
+                                            نظام محتوى طويل الأمد
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span data-ar="موقع شخصي يبيع عنك"
+                                            data-en="A personal website that sells for you">
+                                            موقع شخصي يبيع عنك
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span data-ar="تدريب على الكتابة المؤثرة"
+                                            data-en="Training in persuasive writing">
+                                            تدريب على الكتابة المؤثرة
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span data-ar="متابعة وتوجيه مستمر" data-en="Continuous support and guidance">
+                                            متابعة وتوجيه مستمر
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check-circle"></i>
+                                        <span data-ar="تقارير أداء شهرية" data-en="Monthly performance reports">
+                                            تقارير أداء شهرية
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center mt-4">
 
                             <a href="#contact" class="btn-hero-primary" data-ar="احجز استشارتك الآن ←"
-                                data-en="Book Your Free Consultation ←">
+                                data-en="Book your free consultation now ←"
+                                style="display:inline-block; padding:16px 48px; font-size:1.05rem;">
                                 احجز استشارتك الآن ←
                             </a>
 
-                            
                         </div>
 
-                        <div class="hero-stats">
-
-                            <div class="stat-item">
-                                <div class="stat-num">+<span>500</span></div>
-                                <div class="stat-label" data-ar="علامة تجارية" data-en="Brands">
-                                    علامة تجارية
-                                </div>
-                            </div>
-
-                            <div class="stat-item">
-                                <div class="stat-num">+<span>140</span></div>
-                                <div class="stat-label" data-ar="عميل ساعدتهم" data-en="Clients Helped">
-                                    عميل ساعدتهم
-                                </div>
-                            </div>
-
-                            <div class="stat-item">
-                                <div class="stat-num"><span>6</span></div>
-                                <div class="stat-label" data-ar="سنوات خبرة" data-en="Years of Experience">
-                                    سنوات خبرة
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- IMAGE -->
-                    <div class="col-lg-6 d-flex justify-content-center">
-                        <div class="hero-img-wrap">
-
-                            <div class="hero-img-frame">
-                                <div class="hero-img-placeholder">
-                                    <img src="hero.avif" alt="Walaa Hassan" class="hero-img" />
-                                </div>
-                            </div>
-
-                            <div class="hero-badge">
-                                <div class="hero-badge-icon">⭐</div>
-                                <div class="hero-badge-text">
-                                    <strong>4.9 / 5</strong>
-                                    <span data-ar="تقييم العملاء" data-en="Client Rating">
-                                        تقييم العملاء
-                                    </span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="scroll-indicator" data-ar='<span>اكتشف</span><div class="scroll-line"></div>'
-                data-en='<span>Discover</span><div class="scroll-line"></div>'>
-                <span>اكتشف</span>
-                <div class="scroll-line"></div>
-            </div>
-        </section>
-        <!-- HOOK / PROBLEM -->
-        <section id="hook">
-            <div class="container">
-                <div class="text-center mb-5 reveal">
-
-                    
-
-                    <h2 class="section-title"
-                        data-ar='لو وجودك الرقمي ما يصنع لك عملاء<br><em>فالمشكلة في الاستراتيجية</em>'
-                        data-en='If Your Online Presence Is Not Bringing Clients<br><em>The Problem Is The Strategy</em>'>
-                        لو وجودك الرقمي ما يصنع لك عملاء<br /><em>فالمشكلة في الاستراتيجية</em>
-                    </h2>
-
-                    <p class="section-sub mx-auto" data-ar="ليست مشكلة كتابة إنها مشكلة نظام ورؤية واضحة"
-                        data-en="It's Not A Writing Problem — It's A System And Strategy Problem">
-                        ليست مشكلة كتابة إنها مشكلة نظام ورؤية واضحة
-                    </p>
-
-                </div>
-
-                <div class="row g-4">
-
-                    <div class="col-md-4 reveal">
-                        <div class="hook-card">
-
-                            <div class="hook-icon">
-                                <i class="fa-solid fa-pen-nib"></i>
-                            </div>
-
-                            <h4 data-ar="تجلس قدام الشاشة وما تكتب"
-                                data-en="You Sit In Front Of The Screen And Can't Write">
-                                تجلس قدام الشاشة وما تكتب
-                            </h4>
-
-                            <p data-ar="الفكرة تجيك وتختفي، والمنشور يبقى فراغ. مو مشكلة موهبة — مشكلة نظام واضح للمحتوى."
-                                data-en="Ideas come and go, but the post stays empty. It's not a talent problem — it's a content system problem.">
-                                الفكرة تجيك وتختفي، والمنشور يبقى فراغ. مو مشكلة موهبة — مشكلة
-                                نظام واضح للمحتوى.
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 reveal">
-                        <div class="hook-card">
-
-                            <div class="hook-icon">
-                                <i class="fa-solid fa-hourglass-half"></i>
-                            </div>
-
-                            <h4 data-ar="تنشر بدون خطة وما في نتائج" data-en="You Post Without A Plan And Get No Results">
-                                تنشر بدون خطة وما في نتائج
-                            </h4>
-
-                            <p data-ar="المحتوى العشوائي لا يبني براند. بدون استراتيجية واضحة، كل جهدك يضيع في الزحمة."
-                                data-en="Random content doesn't build a brand. Without a clear strategy, all your effort gets lost in the noise.">
-                                المحتوى العشوائي لا يبني براند. بدونك استراتيجية واضحة، كل جهدك
-                                يضيع في الزحمة.
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 reveal">
-                        <div class="hook-card">
-
-                            <div class="hook-icon">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-
-                            <h4 data-ar="ما عندك وقت تبني حضورك" data-en="You Don't Have Time To Build Your Presence">
-                                ما عندك وقت تبني حضورك
-                            </h4>
-
-                            <p data-ar="أنت مشغول بشغلك الأساسي. نظام المحتوى الصح يختصر عليك الوقت ويضاعف النتائج."
-                                data-en="You're busy with your main work. The right content system saves time and multiplies results.">
-                                أنت مشغول بشغلك الأساسي. نظام المحتوى الصح يختصر عليك الوقت
-                                ويضاعف النتائج.
-                            </p>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- PAIN -->
-        <section id="pain">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0 reveal-left">
-                        
-
-                        <h2 class="section-title" data-ar='كل يوم بدون<br><em>استراتيجية</em> تخسر فيه'
-                            data-en='Every Day Without A<br><em>Strategy</em> Costs You'>
-                            كل يوم بدون<br /><em>استراتيجية</em> تخسر فيه
-                        </h2>
-                        <ul class="pain-list mt-4">
-                            <li>
-                                <i class="fa-solid fa-circle-dot"></i>
-                                <span data-ar="الوقت يضيع والفرص تفوت"
-                                    data-en="Time is wasted and opportunities are missed">
-                                    الوقت يضيع والفرص تفوت
-                                </span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-dot"></i>
-                                <span data-ar="المنافس يكبر وأنت مكانك"
-                                    data-en="Your competitors grow while you stay in the same place">
-                                    المنافس يكبر وأنت مكانك
-                                </span>
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-circle-dot"></i>
-                                <span data-ar="اسمك يختفي بين الزحمة" data-en="Your name gets lost in the crowd">
-                                    اسمك يختفي بين الزحمة
-                                </span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-dot"></i>
-                                <span data-ar="تعب من العشوائية والتخبط" data-en="Tired of randomness and confusion">
-                                    تعب من العشوائية والتخبط
-                                </span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-dot"></i>
-                                <span data-ar="حسابات تكبر وأنت مكانك"
-                                    data-en="Other accounts grow while yours stays still">
-                                    حسابات تكبر وأنت مكانك
-                                </span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-dot"></i>
-                                <span data-ar="تسأل نفسك: ليه ما في نتائج؟"
-                                    data-en="You keep asking yourself: Why am I not getting results?">
-                                    تسأل نفسك: ليه ما في نتائج؟
-                                </span>
-                            </li>
-                        </ul>
-                        <div class="pain-counter mt-4">
-                            <div class="pain-counter-item reveal">
-                                <div class="num" data-target="140">0</div>
-                                <div class="lbl" data-ar="خبير بنيت براندهم" data-en="Experts I Helped Build Their Brand">
-                                    خبير بنيت براندهم
-                                </div>
-                            </div>
-                            <div class="pain-counter-item reveal">
-                                <div class="num" data-target="500">0</div>
-                                <div class="lbl" data-ar="علامات تجارية" data-en="Brands I Helped Build">
-                                    علامات تجارية
-                                </div>
-                            </div>
-                            <div class="pain-counter-item reveal">
-                                <div class="num" data-target="6">0</div>
-                                <div class="lbl" data-ar="سنوات خبرة" data-en="Years of Experience">
-                                    سنوات خبرة
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 reveal">
-                        <div style="
-                    background: rgba(255, 255, 255, 0.06);
-                    border: 1px solid rgba(255, 255, 255, 0.12);
-                    border-radius: 24px;
-                    padding: 40px;
-                ">
-                            <h3 data-ar='تخيل اسمك يكون <span style="color: var(--gold)">براند حقيقي</span>'
-                                data-en='Imagine Your Name Becoming A <span style="color: var(--gold)">Real Brand</span>'>
-                                تخيل اسمك يكون
-                                <span style="color: var(--gold)">براند حقيقي</span>
-                            </h3>
-                            <div style="display: flex; flex-direction: column; gap: 14px">
-                                <div style="display: flex; gap: 14px; align-items: flex-start">
-                                    <div style="
-                        width: 36px;
-                        height: 36px;
-                        background: rgba(245, 200, 66, 0.2);
-                        border-radius: 10px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-shrink: 0;
-                        color: var(--gold);
-                        font-size: 1rem;
-                        ">
-                                        ✦
-                                    </div>
-                                    <p data-ar="يجذب العملاء وأنت نايم بمحتوى يدخل عقل جمهورك بسرعة"
-                                        data-en="Attract clients even while you sleep with content that reaches your audience quickly">
-                                        يجذب العملاء وأنت نايم بمحتوى يدخل عقل جمهورك بسرعة
-                                    </p>
-                                </div>
-                                <div style="display: flex; gap: 14px; align-items: flex-start">
-                                    <div style="
-                        width: 36px;
-                        height: 36px;
-                        background: rgba(245, 200, 66, 0.2);
-                        border-radius: 10px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-shrink: 0;
-                        color: var(--gold);
-                        font-size: 1rem;
-                        ">
-                                        ✦
-                                    </div>
-                                    <p data-ar="حضور مهني قوي يخلي أصحاب القرار يشوفوك ويثقوا فيك"
-                                        data-en="A strong professional presence that makes decision-makers notice and trust you">
-                                        حضور مهني قوي يخلي أصحاب القرار يشوفوك ويثقوا فيك
-                                    </p>
-                                </div>
-                                <div style="display: flex; gap: 14px; align-items: flex-start">
-                                    <div style="
-                        width: 36px;
-                        height: 36px;
-                        background: rgba(245, 200, 66, 0.2);
-                        border-radius: 10px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-shrink: 0;
-                        color: var(--gold);
-                        font-size: 1rem;
-                        ">
-                                        ✦
-                                    </div>
-                                    <p data-ar="الفرص تجيك بدون ما تدور عليها أو تطارد أحد"
-                                        data-en="Opportunities come to you without chasing anyone">
-                                        الفرص تجيك بدون ما تدور عليها أو تطارد أحد
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- WHY ME -->
-        <section id="why">
-            <div class="container">
-                <div class="row align-items-center g-5">
-
-                    <div class="col-lg-5 reveal">
-                        <div class="why-img">
-                            <i class="fa-solid fa-user-tie"></i>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7 reveal">
-
-                        
-                        
-
-                        <h2 class="section-title mb-4" data-ar='على مدى <em>6 سنوات</em><br />كنت معهم من البداية'
-                            data-en='Over <em>6 Years</em><br />I Have Been With Them'>
-                            على مدى <em>6 سنوات</em><br />
-                            كنت معهم من البداية
-                        </h2>
-
-                        <div class="timeline">
-
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-
-                                <h5 data-ar="+500 علامة تجارية" data-en="+500 Brands">
-                                    +500 علامة تجارية
-                                </h5>
-
-                                <p data-ar="اشتغلت مع أكثر من 500 علامة تجارية وساعدتهم يبنوا حضور رقمي حقيقي ومؤثر."
-                                    data-en="I worked with over 500 brands and helped them build a real impactful digital presence.">
-                                    اشتغلت مع أكثر من 500 علامة تجارية وساعدتهم يبنوا حضور رقمي حقيقي ومؤثر.
-                                </p>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-
-                                <h5 data-ar="+140 خبير على لينكدإن وإكس" data-en="+140 Experts on LinkedIn and X">
-                                    +140 خبير على لينكدان وإكس
-                                </h5>
-
-                                <p data-ar="بنيت ظهور أكثر من 140 خبير، رفعت تأثيرهم ووصّلتهم لجمهورهم الصح."
-                                    data-en="I built the presence of 140+ experts and connected them to the right audience.">
-                                    بنيت ظهور أكثر من 140 خبير، رفعت تأثيرهم ووصّلتهم لجمهورهم الصح.
-                                </p>
-
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-
-                                <h5 data-ar="من نشر عشوائي إلى براند مقنع" data-en="From Random Posting To A Strong Brand">
-                                    من نشر عشوائي إلى براند مقنع
-                                </h5>
-
-                                <p data-ar="حوّلت حساباتهم من محتوى عشوائي إلى نظام متكامل يجذب الفرص باستمرار."
-                                    data-en="I turned their accounts from random posting into a system that consistently attracts opportunities.">
-                                    حوّلت حساباتهم من محتوى عشوائي إلى نظام متكامل يجذب الفرص باستمرار.
-                                </p>
-
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-
-                                <h5 data-ar="أنا لا أكتب لك — أبني لك نظاماً"
-                                    data-en="I Don’t Just Write — I Build A System">
-                                    أنا لا أكتب لك — أبني لك نظاماً
-                                </h5>
-
-                                <p data-ar="نظام واضح، مستهدف، مبني على استراتيجية تجعل اسمك أصلاً رقمياً يكبر مع الوقت."
-                                    data-en="A clear targeted system built on strategy that turns your name into a growing digital asset.">
-                                    نظام واضح، مستهدف، مبني على استراتيجية تجعل اسمك أصلاً رقمياً يكبر مع الوقت.
-                                </p>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- PROCESS -->
-        <section id="process">
-            <div class="container">
-
-                <div class="text-center mb-5 reveal">
-
-                    
-
-                    <h2 class="section-title" data-ar='نشتغل مع بعض<br /><em>بخطوات واضحة</em>'
-                        data-en='We Work Together<br /><em>With Clear Steps</em>'>
-                        نشتغل مع بعض<br />
-                        <em>بخطوات واضحة</em>
-                    </h2>
-
-                    <p class="section-sub mx-auto" data-ar="هذه الآلية تختصر عليك سنوات من التجربة العشوائية"
-                        data-en="This process saves you years of trial and error">
-                        هذه الآلية تختصر عليك سنوات من التجربة العشوائية
-                    </p>
-
-                </div>
-
-                <div class="row g-4">
-
-                    <div class="col-md-6 col-lg-3 reveal">
-                        <div class="process-step">
-
-                            <div class="step-num">01</div>
-
-                            <div class="step-icon">
-                                <i class="fa-solid fa-fingerprint"></i>
-                            </div>
-
-                            <h4 data-ar="هويتك الرقمية" data-en="Your Digital Identity">
-                                هويتك الرقمية
-                            </h4>
-
-                            <p data-ar="نحدد هويتك ونوضح رسالتك ونحدد جمهورك المستهدف بدقة"
-                                data-en="We define your identity, clarify your message, and identify your target audience precisely">
-                                نحدد هويتك ونوضح رسالتك ونحدد جمهورك المستهدف بدقة
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 reveal">
-                        <div class="process-step">
-
-                            <div class="step-num">02</div>
-
-                            <div class="step-icon">
-                                <i class="fa-solid fa-compass-drafting"></i>
-                            </div>
-
-                            <h4 data-ar="الاستراتيجية" data-en="Strategy">
-                                الاستراتيجية
-                            </h4>
-
-                            <p data-ar="نصمم استراتيجيتك الكاملة ونبني محتوى يبيع قبل ما تتكلم"
-                                data-en="We design your full strategy and create content that sells before you speak">
-                                نصمم استراتيجيتك الكاملة ونبني محتوى يبيع قبل ما تتكلم
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 reveal">
-                        <div class="process-step">
-
-                            <div class="step-num">03</div>
-
-                            <div class="step-icon">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </div>
-
-                            <h4 data-ar="تهيئة الحسابات" data-en="Account Optimization">
-                                تهيئة الحسابات
-                            </h4>
-
-                            <p data-ar="نهيئ لينكدان وإكس ليكونا مغناطيس يجذب العملاء باستمرار"
-                                data-en="We optimize LinkedIn and X to become a magnet for consistent clients">
-                                نهيئ لينكدان وإكس ليكونا مغناطيس يجذب العملاء باستمرار
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 reveal">
-                        <div class="process-step">
-
-                            <div class="step-num">04</div>
-
-                            <div class="step-icon">
-                                <i class="fa-solid fa-rocket"></i>
-                            </div>
-
-                            <h4 data-ar="النمو المستدام" data-en="Sustainable Growth">
-                                النمو المستدام
-                            </h4>
-
-                            <p data-ar="نربط الحضور الرقمي بالهدف التجاري ونتابع معك للنمو المستمر"
-                                data-en="We connect your digital presence to your business goals and support continuous growth">
-                                نربط الحضور الرقمي بالهدف التجاري ونتابع معك للنمو المستمر
-                            </p>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- PACKAGE -->
-        <section id="package">
-            <div class="container">
-
-                <div class="text-center mb-5 reveal">
-
-                    
-
-                    <h2 class="section-title" data-ar='باقة <em>التمكين الرقمي</em>'
-                        data-en='Digital <em>Empowerment Package</em>'>
-                        باقة <em>التمكين الرقمي</em>
-                    </h2>
-
-                    <p class="section-sub mx-auto"
-                        data-ar="مصممة لكل خبير وصاحب خدمة يريد التحول من محتوى عشوائي إلى براند قوي يجذب فرصاً باستمرار"
-                        data-en="Designed for every expert and service provider who wants to move from random content to a strong brand that attracts consistent opportunities">
-                        مصممة لكل خبير وصاحب خدمة يريد التحول من محتوى عشوائي إلى براند قوي
-                        يجذب فرصاً باستمرار
-                    </p>
-
-                </div>
-
-                <div class="row justify-content-center">
-
-                    <div class="col-lg-8 reveal">
-
-                        <div class="package-card">
-
-                            <div class="package-badge" data-ar="الأكثر طلباً ✦" data-en="Most Requested ✦">
-                                الأكثر طلباً ✦
-                            </div>
-
-                            <div class="row mb-4">
-                                <div class="col">
-
-                                    <p class="package-title" data-ar="التمكين الرقمي الشامل"
-                                        data-en="Full Digital Empowerment">
-                                        التمكين الرقمي الشامل
-                                    </p>
-
-                                    <p class="package-sub" data-ar="كل ما تحتاجه لبناء براند رقمي يصنع لك دخلاً مستداماً"
-                                        data-en="Everything you need to build a digital brand that generates sustainable income">
-                                        كل ما تحتاجه لبناء براند رقمي يصنع لك دخلاً مستداماً
-                                    </p>
-
-                                </div>
-                            </div>
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <ul class="package-list">
-
-                                        <li>
-                                            <i class="fa-solid fa-check-circle"></i>
-                                            <span data-ar="براند شخصي واضح ومميز" data-en="Clear and unique personal brand">
-                                                براند شخصي واضح ومميز
-                                            </span>
-                                        </li>
-
-                                        <li>
-                                            <i class="fa-solid fa-check-circle"></i>
-                                            <span data-ar="استراتيجية محتوى شاملة" data-en="Comprehensive content strategy">
-                                                استراتيجية محتوى شاملة
-                                            </span>
-                                        </li>
-
-                                        <li>
-                                            <i class="fa-solid fa-check-circle"></i>
-                                            <span data-ar="تطوير كامل لينكدان وإكس"
-                                                data-en="Full LinkedIn and X optimization">
-                                                تطوير كامل لينكدان وإكس
-                                            </span>
-                                        </li>
-
-                                        <li>
-                                            <i class="fa-solid fa-check-circle"></i>
-                                            <span data-ar="قصة مهنية مؤثرة وجذابة"
-                                                data-en="Powerful and engaging professional story">
-                                                قصة مهنية مؤثرة وجذابة
-                                            </span>
-                                        </li>
-
-                                        <li>
-                                            <i class="fa-solid fa-check-circle"></i>
-                                            <span data-ar="خطة نمو مفصّلة" data-en="Detailed growth plan">
-                                                خطة نمو مفصّلة
-                                            </span>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <ul class="package-list">
-
-                                        <li>
-                                            <i class="fa-solid fa-check-circle"></i>
-                                            <span data-ar="نظام محتوى طويل الأمد" data-en="Long-term content system">
-                                                نظام محتوى طويل الأمد
-                                            </span>
-                                        </li>
-
-                                        <li>
-                                            <i class="fa-solid fa-check-circle"></i>
-                                            <span data-ar="موقع شخصي يبيع عنك"
-                                                data-en="A personal website that sells for you">
-                                                موقع شخصي يبيع عنك
-                                            </span>
-                                        </li>
-
-                                        <li>
-                                            <i class="fa-solid fa-check-circle"></i>
-                                            <span data-ar="تدريب على الكتابة المؤثرة"
-                                                data-en="Training in persuasive writing">
-                                                تدريب على الكتابة المؤثرة
-                                            </span>
-                                        </li>
-
-                                        <li>
-                                            <i class="fa-solid fa-check-circle"></i>
-                                            <span data-ar="متابعة وتوجيه مستمر" data-en="Continuous support and guidance">
-                                                متابعة وتوجيه مستمر
-                                            </span>
-                                        </li>
-
-                                        <li>
-                                            <i class="fa-solid fa-check-circle"></i>
-                                            <span data-ar="تقارير أداء شهرية" data-en="Monthly performance reports">
-                                                تقارير أداء شهرية
-                                            </span>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                            <div class="text-center mt-4">
-
-                                <a href="#contact" class="btn-hero-primary" data-ar="احجز استشارتك المجانية الآن ←"
-                                    data-en="Book your free consultation now ←"
-                                    style="display:inline-block; padding:16px 48px; font-size:1.05rem;">
-                                    احجز استشارتك المجانية الآن ←
-                                </a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- TESTIMONIALS -->
-     <section id="testimonials">
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-
-            <h2 class="section-title">
-                ماذا يقول<br />
-                <em>من عملوا معي</em>
-            </h2>
-
         </div>
+    </section>
 
-        <!-- SWIPER -->
-        <div class="swiper testimonialsSwiper">
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <div class="container">
 
-            <div class="swiper-wrapper">
+            <div class="text-center mb-5">
 
-                <!-- slide 1 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="stars">★★★★★</div>
-                        <p>محمد مصمم جرافيك 🌟<br>مرحبًا أ. ولاء  🌟
+                <h2 class="section-title" data-ar='ماذا يقول<br /><em>من عملوا معي</em>'
+                    data-en='What They Say<br /><em>About Working With Me</em>'>
+                    ماذا يقول<br />
+                    <em>من عملوا معي</em>
+                </h2>
+
+            </div>
+
+            <!-- SWIPER -->
+            <div class="swiper testimonialsSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p data-ar="محمد / مصمم جرافيك <br>مرحبًا أ. ولاء 🌟
 
 حابب أشاركك بامتنان كبير إنه بفضل برنامج التمكين الرقمي، صار كل يوم تقريبًا يجيني عميل جديد 🙌
 
@@ -796,330 +785,339 @@
 صراحة البرنامج كان نقطة تحوّل حقيقية في مسيرتي.
 
 شكرًا من القلب إلكم على الجهد والدعم والتوجيه ❤️
-ودائمًا للأمام 💪</p>
+ودائمًا للأمام 💪" data-en="Mohamed / Graphic Designer <br>Hello Ms. Walaa 🌟
+
+I want to share my deep gratitude. Thanks to the Digital Empowerment Program, I now get a new client almost every day 🙌
+
+The difference was clear from the moment I applied what I learned — in how I present my services, communicate with clients, and organize my work.
+Honestly, the program was a real turning point in my career.
+
+Thank you from the heart for your effort, support, and guidance ❤️
+Always moving forward 💪">
+
+                                محمد / مصمم جرافيك <br>مرحبًا أ. ولاء 🌟
+                            </p>
+                        </div>
                     </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p data-ar="حسام / مصمم واجهات<br>حبيت أشكرك من قلبي على دعمك ومساعدتك إلي في تمكين حسابي على منصة X، فعلاً فرق معي كثير ووصلت لناس ما كنت أتخيل أوصلهم.
+وجودك وتوجيهاتك كان لهم أثر كبير، والله يعطيك العافية على مجهودك الرائع 🙏❤️" data-en="Hossam / UI Designer<br>I want to thank you from my heart for your support in empowering my X account. It made a huge difference and helped me reach people I never imagined I could reach.
+Your guidance had a strong impact. Thank you for your amazing effort 🙏❤️">
+
+                                حسام / مصمم واجهات<br>حبيت أشكرك من قلبي...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p data-ar="خليل / استشاري تسويق عقاري<br>الله يسعدك ويبارك فيكي، عنجد مشكورة جداً على جهودك وضميرك في اتقان كل شيء..."
+                                data-en="Khalil / Real Estate Marketing Consultant<br>Thank you so much for your dedication and professionalism in every detail...">
+
+                                خليل / استشاري تسويق عقاري<br>الله يسعدك ويبارك فيكي...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p data-ar="أحمد / مصمم جرافيك<br>صراحة برنامج التمكين الرقمي كان نقطة تحوّل في مسيرتي..."
+                                data-en="Ahmed / Graphic Designer<br>Honestly, the Digital Empowerment Program was a turning point in my career...">
+
+                                أحمد / مصمم جرافيك<br>صراحة برنامج التمكين...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p data-ar="يوسف / مدرب قيادة<br>صباح الخير، تواصلت معي عميلتين وكل وحدة سجلت دورة..."
+                                data-en="Youssef / Driving Instructor<br>Good morning, two clients contacted me and both booked training sessions...">
+
+                                يوسف / مدرب قيادة<br>صباح الخير...
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <!-- slide 2 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="stars">★★★★★</div>
-                        <p>حسام مصمم واجهات ❤️<br>حبيت أشكرك من قلبي على دعمك ومساعدتك إلي في تمكين حسابي على منصة X، فعلاً فرق معي كثير ووصلت لناس ما كنت أتخيل أوصلهم.
-وجودك وتوجيهاتك كان لهم أثر كبير، والله يعطيك العافية على مجهودك الرائع 🙏❤️
-ودائمًا للأمام 💪</p>
-                    </div>
-                </div>
-
-                <!-- slide 3 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="stars">★★★★★</div>
-                        <p>خليل / استشاري في التسويق العقاري</p><br>الله يسعدك ويبارك فيكي, عنجد مشكورة جداً على جهودك وضميرك في اتقان كل شي بدءاً بتفاصيل الحساب النصية حول خليل ودقتك في التعبير عني وعن المهنة كانت جداً حلوه, والمهارات تم ادارجها وسردها بما يتناسب تماماً مع حقل العمل,, والهوية البصرية والترتيب وصدقك وضميرك في الانجاز والاتقان تشكري عليه,, وبوركتي وبتستاهلي كل خير والله.. وان شاء الله بوصي عليكي كل معارفي لو حدا احتاج خدمة من خدماتك, وربنا يجزاكي الخير..</p>
-                    </div>
-                </div>
-
-                <!-- slide 4 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="stars">★★★★★</div>
-                        <p>أحمد مصمم جرافيكي 🙏<br>صراحة، برنامج التمكين الرقمي كان نقطة تحوّل في مسيرتي العملية
-رتّب أفكاري، خلاني أعرّف هويتي بوضوح، وأقدم خدماتي بأسلوب يوصل للجمهور الصح.
-
-صرت أعرف مين أستهدف، وكيف أقدّم محتوى يوقف القارئ عنده
-وهذا أكثر شيء فادني 🙏
-
-بفضل الله ثم توجيهاتك ، التفاعل زاد والعملاء بدأوا يجو فعليًا
-شكرًا من القلب على كل دعم وتشجيع. 
-صح بتسوي ضابط شرطة علي لكن كان اله مفعول قوي في يلي وصلتله 😂
-واللي جاي أقوى بإذن الله</p>
-                    </div>
-                </div>
-
-                <!-- slide 5 -->
-                <div class="swiper-slide">
-                    <div class="testimonial-card">
-                        <div class="stars">★★★★★</div>
-                        <p>يوسف مدرب قيادة 😄<br>السلام عليكم 
-صباح الخير 
-لي من ثلاثة أيام أبتواصل معك 
-ونسيت 
-
-حبيت أخبرك تواصلت معي عميلتين 
-وكل وحده نسقت معي دورة تدريبية وسألتهم كيف توصلتم لي 
-قالوا من حسابك في اكس 😀🌹</p>
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
 
             </div>
-
-            <!-- dots -->
-            <div class="swiper-pagination"></div>
 
         </div>
-
-    </div>
-</section>
+    </section>
 
 
 
 
 
 
-        <!-- CONTACT -->
-        <section id="contact">
-            <div class="container">
-                <div class="row g-5">
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="row g-5">
 
-                    <!-- LEFT -->
-                    <div class="col-lg-5 reveal">
+                <!-- LEFT -->
+                <div class="col-lg-5 reveal">
 
-                        
 
-                        <h2 class="section-title" data-ar='جاهز تحوّل<br /><em>اسمك إلى براند؟</em>'
-                            data-en='Ready To Turn<br /><em>Your Name Into A Brand?</em>'>
-                            جاهز تحوّل<br />
-                            <em>اسمك إلى براند؟</em>
-                        </h2>
 
-                        <p class="section-sub" data-ar="احجز استشارتك المجانية الآن وابدأ رحلتك الرقمية بطريقة صحيحة"
-                            data-en="Book your free consultation now and start your digital journey the right way">
-                            احجز استشارتك المجانية الآن وابدأ رحلتك الرقمية بطريقة صحيحة
-                        </p>
+                    <h2 class="section-title" data-ar='جاهز تحوّل<br /><em>اسمك إلى براند؟</em>'
+                        data-en='Ready To Turn<br /><em>Your Name Into A Brand?</em>'>
+                        جاهز تحوّل<br />
+                        <em>اسمك إلى براند؟</em>
+                    </h2>
 
-                        <div class="contact-alt mt-4">
+                    <p class="section-sub" data-ar="احجز استشارتك  الآن وابدأ رحلتك الرقمية بطريقة صحيحة"
+                        data-en="Book your free consultation now and start your digital journey the right way">
+                        احجز استشارتك الآن وابدأ رحلتك الرقمية بطريقة صحيحة
+                    </p>
 
-                            <a href="https://wa.me/00972592663938?text=مرحبا ولاء، أريد أحجز استشارة" target="_blank"
-                                class="contact-channel">
+                    <div class="contact-alt mt-4">
 
-                                <div class="channel-icon channel-whatsapp">
-                                    <i class="fa-brands fa-whatsapp" style="color: white"></i>
-                                </div>
+                        <a href="https://wa.me/00972592663938?text=مرحبا ولاء، أريد أحجز استشارة" target="_blank"
+                            class="contact-channel">
 
-                                <div class="channel-text">
-                                    <strong data-ar="واتساب" data-en="WhatsApp">واتساب</strong>
-                                    <span data-ar="تحدث معي مباشرة الآن" data-en="Talk to me directly now">
-                                        تحدث معي مباشرة الآن
-                                    </span>
-                                </div>
+                            <div class="channel-icon channel-whatsapp">
+                                <i class="fa-brands fa-whatsapp" style="color: white"></i>
+                            </div>
 
-                                <i class="fa-solid fa-arrow-left ms-auto" style="color: rgba(255, 255, 255, 0.4)"></i>
+                            <div class="channel-text">
+                                <strong data-ar="واتساب" data-en="WhatsApp">واتساب</strong>
+                                <span data-ar="تحدث معي مباشرة الآن" data-en="Talk to me directly now">
+                                    تحدث معي مباشرة الآن
+                                </span>
+                            </div>
 
-                            </a>
+                            <i class="fa-solid fa-arrow-left ms-auto" style="color: rgba(255, 255, 255, 0.4)"></i>
 
-                            <a href="https://www.linkedin.com/in/wala-hassan?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-channel">
+                        </a>
 
-                                <div class="channel-icon channel-linkedin">
-                                    <i class="fa-brands fa-linkedin-in" style="color: white"></i>
-                                </div>
+                        <a href="https://www.linkedin.com/in/wala-hassan?utm_source=share_via&utm_content=profile&utm_medium=member_androida"
+                            target="_blank" class="contact-channel">
 
-                                <div class="channel-text">
-                                    <strong data-ar="لينكدان" data-en="LinkedIn">لينكدان</strong>
-                                    <span data-ar="تابعني وتواصل معي" data-en="Follow and connect with me">
-                                        تابعني وتواصل معي
-                                    </span>
-                                </div>
+                            <div class="channel-icon channel-linkedin">
+                                <i class="fa-brands fa-linkedin-in" style="color: white"></i>
+                            </div>
 
-                                <i class="fa-solid fa-arrow-left ms-auto" style="color: rgba(255, 255, 255, 0.4)"></i>
+                            <div class="channel-text">
+                                <strong data-ar="لينكدان" data-en="LinkedIn">لينكدان</strong>
+                                <span data-ar="تابعني وتواصل معي" data-en="Follow and connect with me">
+                                    تابعني وتواصل معي
+                                </span>
+                            </div>
 
-                            </a>
+                            <i class="fa-solid fa-arrow-left ms-auto" style="color: rgba(255, 255, 255, 0.4)"></i>
 
-                            <a href="mailto:walaa@example.com" class="contact-channel">
+                        </a>
 
-                                <div class="channel-icon channel-email">
-                                    <i class="fa-solid fa-envelope" style="color: white"></i>
-                                </div>
+                        <a href="https://mail.google.com/mail/?view=cm&to=wala.hassan1994@gmail.com"
+                            class="contact-channel">
 
-                                <div class="channel-text">
-                                    <strong data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</strong>
-                                    <span data-ar="wala.hassan1994@gmail.com" data-en="wala.hassan1994@gmail.com">
-                                            wala.hassan1994@gmail.com
-                                    </span>
-                                </div>
+                            <div class="channel-icon channel-email">
+                                <i class="fa-solid fa-envelope" style="color: white"></i>
+                            </div>
 
-                                <i class="fa-solid fa-arrow-left ms-auto" style="color: rgba(255, 255, 255, 0.4)"></i>
+                            <div class="channel-text">
+                                <strong data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</strong>
+                                <span data-ar="wala.hassan1994@gmail.com" data-en="wala.hassan1994@gmail.com">
+                                    wala.hassan1994@gmail.com
+                                </span>
+                            </div>
 
-                            </a>
+                            <i class="fa-solid fa-arrow-left ms-auto" style="color: rgba(255, 255, 255, 0.4)"></i>
 
-                        </div>
+                        </a>
+
                     </div>
+                </div>
 
-                    <!-- RIGHT -->
-                    <div class="col-lg-7 reveal">
+                <!-- RIGHT -->
+                <div class="col-lg-7 reveal">
 
-                        <div class="contact-form-wrap">
+                    <div class="contact-form-wrap">
 
-                            <h4 data-ar="احجز استشارتك المجانية" data-en="Book Your Free Consultation"
-                                style="color: white; font-weight: 700; margin-bottom: 24px">
-                                احجز استشارتك المجانية
-                            </h4>
+                        <h4 data-ar="احجز استشارتك المجانية" data-en="Book Your Free Consultation"
+                            style="color: white; font-weight: 700; margin-bottom: 24px">
+                            احجز استشارتك المجانية
+                        </h4>
 
-                            <form id="contactForm">
+                        <form id="contactForm">
 
-                                <div class="row g-3">
+                            <div class="row g-3">
 
-                                    <div class="col-md-6">
-                                        <label class="form-label" data-ar="الاسم الكامل" data-en="Full Name">
-                                            الاسم الكامل
+                                <div class="col-md-6">
+                                    <label class="form-label" data-ar="الاسم الكامل" data-en="Full Name">
+                                        الاسم الكامل
+                                    </label>
+                                    <input type="text" class="form-control" data-ar-placeholder="اكتب اسمك"
+                                        data-en-placeholder="Enter your name" placeholder="اكتب اسمك" />
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label" data-ar="رقم الواتساب" data-en="WhatsApp Number">
+                                        رقم الواتساب
+                                    </label>
+                                    <input type="tel" class="form-control" placeholder="+966 5XX XXX XXXX" required />
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label" data-ar="البريد الإلكتروني" data-en="Email">
+                                        البريد الإلكتروني
+                                    </label>
+                                    <input type="email" class="form-control" placeholder="email@example.com" required />
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label" data-ar="مجالك أو خدمتك" data-en="Your Field / Service">
+                                        مجالك أو خدمتك
+                                    </label>
+
+                                    <select class="form-select">
+                                        <option data-ar="اختر مجالك" data-en="Select your field">اختر مجالك</option>
+                                        <option data-ar="استشارات ومبيعات" data-en="Consulting & Sales">استشارات ومبيعات
+                                        </option>
+                                        <option data-ar="تدريب وكوتشينج" data-en="Coaching">تدريب وكوتشينج</option>
+                                        <option data-ar="تقنية وبرمجة" data-en="Tech & Programming">تقنية وبرمجة
+                                        </option>
+                                        <option data-ar="تسويق وإعلام" data-en="Marketing & Media">تسويق وإعلام</option>
+                                        <option data-ar="محاسبة ومال" data-en="Finance & Accounting">محاسبة ومال
+                                        </option>
+                                        <option data-ar="طب وصحة" data-en="Medical & Health">طب وصحة</option>
+                                        <option data-ar="قانون وأعمال" data-en="Law & Business">قانون وأعمال</option>
+                                        <option data-ar="غير ذلك" data-en="Other">غير ذلك</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label" data-ar="أكبر تحدي تواجهه الآن"
+                                        data-en="Biggest Challenge You're Facing">
+                                        أكبر تحدي تواجهه الآن
+                                    </label>
+
+                                    <textarea class="form-control" rows="3"
+                                        data-ar-placeholder="أخبرني عن وضعك الحالي وماذا تريد تحقيقه..."
+                                        data-en-placeholder="Tell me about your current situation and what you want to achieve"
+                                        placeholder="أخبرني عن وضعك الحالي وماذا تريد تحقيقه..."></textarea>
+
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label" data-ar="كيف تفضل التواصل؟"
+                                        data-en="Preferred Contact Method">
+                                        كيف تفضل التواصل؟
+                                    </label>
+
+                                    <div class="d-flex gap-3">
+
+                                        <label>
+                                            <input type="radio" name="contact_pref" value="whatsapp"
+                                                style="accent-color: var(--gold)" />
+                                            <span data-ar="واتساب" data-en="WhatsApp">واتساب</span>
                                         </label>
-                                        <input type="text" class="form-control" placeholder="اكتب اسمك" required />
-                                    </div>
 
-                                    <div class="col-md-6">
-                                        <label class="form-label" data-ar="رقم الواتساب" data-en="WhatsApp Number">
-                                            رقم الواتساب
-                                        </label>
-                                        <input type="tel" class="form-control" placeholder="+966 5XX XXX XXXX" required />
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label class="form-label" data-ar="البريد الإلكتروني" data-en="Email">
-                                            البريد الإلكتروني
-                                        </label>
-                                        <input type="email" class="form-control" placeholder="email@example.com" required />
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label class="form-label" data-ar="مجالك أو خدمتك" data-en="Your Field / Service">
-                                            مجالك أو خدمتك
+                                        <label>
+                                            <input type="radio" name="contact_pref" value="email"
+                                                style="accent-color: var(--gold)" />
+                                            <span data-ar="بريد" data-en="Email">بريد</span>
                                         </label>
 
-                                        <select class="form-select">
-                                            <option data-ar="اختر مجالك" data-en="Select your field">اختر مجالك</option>
-                                            <option data-ar="استشارات ومبيعات" data-en="Consulting & Sales">استشارات ومبيعات
-                                            </option>
-                                            <option data-ar="تدريب وكوتشينج" data-en="Coaching">تدريب وكوتشينج</option>
-                                            <option data-ar="تقنية وبرمجة" data-en="Tech & Programming">تقنية وبرمجة
-                                            </option>
-                                            <option data-ar="تسويق وإعلام" data-en="Marketing & Media">تسويق وإعلام</option>
-                                            <option data-ar="محاسبة ومال" data-en="Finance & Accounting">محاسبة ومال
-                                            </option>
-                                            <option data-ar="طب وصحة" data-en="Medical & Health">طب وصحة</option>
-                                            <option data-ar="قانون وأعمال" data-en="Law & Business">قانون وأعمال</option>
-                                            <option data-ar="غير ذلك" data-en="Other">غير ذلك</option>
-                                        </select>
-
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label class="form-label" data-ar="أكبر تحدي تواجهه الآن"
-                                            data-en="Biggest Challenge You're Facing">
-                                            أكبر تحدي تواجهه الآن
+                                        <label>
+                                            <input type="radio" name="contact_pref" value="call"
+                                                style="accent-color: var(--gold)" />
+                                            <span data-ar="اتصال" data-en="Call">اتصال</span>
                                         </label>
-
-                                        <textarea class="form-control" rows="3"
-                                            placeholder="أخبرني عن وضعك الحالي وماذا تريد تحقيقه..."
-                                            data-ar="أخبرني عن وضعك الحالي وماذا تريد تحقيقه..."
-                                            data-en="Tell me about your current situation and what you want to achieve"></textarea>
-
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label class="form-label" data-ar="كيف تفضل التواصل؟"
-                                            data-en="Preferred Contact Method">
-                                            كيف تفضل التواصل؟
-                                        </label>
-
-                                        <div class="d-flex gap-3">
-
-                                            <label>
-                                                <input type="radio" name="contact_pref" value="whatsapp"
-                                                    style="accent-color: var(--gold)" />
-                                                <span data-ar="واتساب" data-en="WhatsApp">واتساب</span>
-                                            </label>
-
-                                            <label>
-                                                <input type="radio" name="contact_pref" value="email"
-                                                    style="accent-color: var(--gold)" />
-                                                <span data-ar="بريد" data-en="Email">بريد</span>
-                                            </label>
-
-                                            <label>
-                                                <input type="radio" name="contact_pref" value="call"
-                                                    style="accent-color: var(--gold)" />
-                                                <span data-ar="اتصال" data-en="Call">اتصال</span>
-                                            </label>
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-12">
-
-                                        <button type="submit" class="btn-contact" data-ar="أرسل الطلب الآن"
-                                            data-en="Send Request Now">
-
-                                            <i class="fa-solid fa-paper-plane me-2"></i>
-                                            أرسل الطلب الآن
-                                        </button>
-
-                                        <div class="form-success" id="formSuccess"
-                                            data-ar="تم إرسال طلبك بنجاح! سأتواصل معك خلال 24 ساعة"
-                                            data-en="Your request was sent successfully! I will contact you within 24 hours">
-                                            ✅ تم إرسال طلبك بنجاح! سأتواصل معك خلال 24 ساعة
-                                        </div>
 
                                     </div>
 
                                 </div>
 
-                            </form>
+                                <div class="col-12">
 
-                        </div>
+                                    <button type="submit" class="btn-contact" data-ar="أرسل الطلب الآن"
+                                        data-en="Send Request Now">
+
+                                        <i class="fa-solid fa-paper-plane me-2"></i>
+                                        أرسل الطلب الآن
+                                    </button>
+
+                                    <div class="form-success" id="formSuccess"
+                                        data-ar="تم إرسال طلبك بنجاح! سأتواصل معك خلال 24 ساعة"
+                                        data-en="Your request was sent successfully! I will contact you within 24 hours">
+                                        ✅ تم إرسال طلبك بنجاح! سأتواصل معك خلال 24 ساعة
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </form>
 
                     </div>
 
                 </div>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer>
-            <div class="container">
-
-                <div class="footer-social">
-
-                    <a href="https://www.linkedin.com/in/wala-hassan?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-
-                    <a href="#" aria-label="X">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/walaa_hassan94?igsh=MWR6OWx4bGV5a2Z5OQ==" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="https://wa.me/972592663938" aria-label="WhatsApp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                </div>
-
-                <p data-ar="© 2025 ولاء حسان · جميع الحقوق محفوظة" data-en="© 2025 Walaa Hassan · All Rights Reserved">
-                    © 2025 ولاء حسان · جميع الحقوق محفوظة
-                </p>
-
-                <p class="mt-2" style="font-size: 0.78rem; opacity: 0.5"
-                    data-ar="خبيرة البراند الشخصي | استراتيجية نمو لينكدإن وإكس"
-                    data-en="Personal Branding Expert | LinkedIn & X Growth Strategist">
-                    Personal Branding Expert | LinkedIn & X Growth Strategist
-                </p>
-
-                <!-- CREDIT -->
-                <p class="footer-credit">
-                    Designed & Developed by
-                    <a href="https://mi-lr.netlify.app" target="_blank" rel="noopener">
-                        MILR
-                    </a>
-                    © 2026
-                </p>
 
             </div>
-        </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="script.js"></script>
-    </body>
+        </div>
+    </section>
 
-    </html>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+
+            <div class="footer-social">
+
+                <a href="https://www.linkedin.com/in/wala-hassan?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://x.com/WalaaNHassan1" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="https://www.instagram.com/walaa_hassan94?igsh=MWR6OWx4bGV5a2Z5OQ==" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/972592663938" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+            <p data-ar="© 2025 ولاء حسان · جميع الحقوق محفوظة" data-en="© 2025 Walaa Hassan · All Rights Reserved">
+                © 2025 ولاء حسان · جميع الحقوق محفوظة
+            </p>
+
+            <p class="mt-2" style="font-size: 0.78rem; opacity: 0.5"
+                data-ar="خبيرة البراند الشخصي | استراتيجية نمو لينكدإن وإكس"
+                data-en="Personal Branding Expert | LinkedIn & X Growth Strategist">
+                Personal Branding Expert | LinkedIn & X Growth Strategist
+            </p>
+
+            <!-- CREDIT -->
+            <p class="footer-credit">
+                Designed & Developed by
+                <a href="https://mi-lr.netlify.app" target="_blank" rel="noopener">
+                    MILR
+                </a>
+                © 2026
+            </p>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

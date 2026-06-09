@@ -175,20 +175,20 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // ── MOBILE MENU ──
     const navToggle = document.getElementById("nav-toggle");
-const drawer = document.querySelector(".nav-drawer");
-const drawerLinks = document.querySelectorAll(".nav-drawer a");
+    const drawer = document.querySelector(".nav-drawer");
+    const drawerLinks = document.querySelectorAll(".nav-drawer a");
 
-drawerLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        navToggle.checked = false;
+    drawerLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            navToggle.checked = false;
+        });
     });
-});
 
-drawer.addEventListener("click", (e) => {
-    if (e.target === drawer) {
-        navToggle.checked = false;
-    }
-});
+    drawer.addEventListener("click", (e) => {
+        if (e.target === drawer) {
+            navToggle.checked = false;
+        }
+    });
     // ── PAIN LIST REVEAL ──
     const painItems = document.querySelectorAll("#pain .pain-list li");
 

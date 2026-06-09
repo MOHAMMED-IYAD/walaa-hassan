@@ -177,6 +177,11 @@ body {
     .nav-hamburger {
         display: flex;
     }
+
+    .nav-cta {
+        background: var(--primary);
+        color: #fff !important;
+    }
 }
 
 /* ── HERO ── */

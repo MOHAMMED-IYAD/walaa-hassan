@@ -927,81 +927,77 @@ section {
     background: var(--off-white);
 }
 
-.testimonial-card {
-    background: rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 18px;
-    padding: 25px;
-    transition: 0.3s ease;
-}
-
-.stars {
-    color: var(--gold);
-    font-size: 0.9rem;
-    margin-bottom: 16px;
-}
-
-.testimonial-text {
-    font-size: 0.93rem;
-    color: #444;
-    line-height: 1.8;
-    margin-bottom: 24px;
-    font-style: italic;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
+/* CARD */
 .testimonial-card {
     background: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     height: 100%;
+    transition: 0.3s ease;
+    font-family: inherit;
 }
 
+/* STARS */
 .stars {
     color: gold;
     margin-bottom: 10px;
+    font-size: 0.9rem;
 }
 
-.testimonials-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
+/* NAME */
 .testimonial-name {
     font-weight: 700;
     margin-bottom: 8px;
 }
+
 .testimonial-name span {
     color: var(--gold);
     font-weight: 400;
     font-size: 0.85rem;
 }
 
-.testimonial-card-item {
-    display: none;
+/* TEXT */
+.testimonial-text {
+    font-family: inherit;
+    /* يثبت الخط */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.8;
+    font-size: 0.93rem;
 }
 
-.testimonial-card-item.active {
+/* بدل unset - نخليه طبيعي */
+.testimonial-text.expanded {
     display: block;
+    /* أهم سطر */
+    overflow: visible;
 }
 
+/* BUTTON */
+.read-more {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: #0d6efd;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* SWIPER FIX — أهم تعديل */
+/* الحالة الافتراضية لكل الكروت */
 .testimonialsSwiper .swiper-slide {
-    transition: all 0.4s ease;
     transform: scale(0.85);
     opacity: 0.4;
     filter: blur(2px);
+    transition: all 0.4s ease;
+    height: auto;
+    display: flex;
 }
 
-/* الكارد النشط (اللي بالنص) */
+/* الكارد النشط بالنص */
 .testimonialsSwiper .swiper-slide-active {
     transform: scale(1);
     opacity: 1;
@@ -1009,35 +1005,12 @@ section {
     z-index: 3;
 }
 
-/* الكارد اللي قبل وبعد النشط */
+/* اللي قبل وبعد */
 .testimonialsSwiper .swiper-slide-prev,
 .testimonialsSwiper .swiper-slide-next {
+    transform: scale(0.9);
     opacity: 0.6;
     filter: blur(1px);
-    transform: scale(0.9);
-}
-
-.author-avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.author-name {
-    font-weight: 700;
-    font-size: 0.92rem;
-}
-
-.author-title {
-    font-size: 0.78rem;
-    color: var(--text-muted);
 }
 
 /* ── CONTACT ── */

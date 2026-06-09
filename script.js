@@ -91,24 +91,39 @@ window.addEventListener("DOMContentLoaded", function () {
         document.documentElement.lang = lang;
         document.documentElement.dir = isAr ? "rtl" : "ltr";
 
-        // ── TEXT CHANGE ──
+        // TEXT CHANGE (FIXED FOR TESTIMONIALS)
         document.querySelectorAll("[data-ar][data-en]").forEach(el => {
-            el.innerHTML = isAr ? el.dataset.ar : el.dataset.en;
+
+            const newText = isAr ? el.dataset.ar : el.dataset.en;
+
+            if (el.classList.contains("testimonial-text")) {
+
+                // نحفظ النص الحالي
+                el.dataset.current = newText;
+
+                // ما نكسر "عرض المزيد"
+                if (!el.classList.contains("expanded")) {
+                    el.innerHTML = newText;
+                }
+
+            } else {
+                el.innerHTML = newText;
+            }
         });
 
-        // ── PLACEHOLDER FIX ──
+        // PLACEHOLDER
         document.querySelectorAll("[data-ar-placeholder]").forEach(el => {
             el.placeholder = isAr
                 ? el.getAttribute("data-ar-placeholder")
                 : el.getAttribute("data-en-placeholder");
         });
 
-        // ── TITLE ──
+        // TITLE
         document.title = isAr
             ? "ولاء حسان | خبيرة البراند الشخصي"
             : "Walaa Hassan | Personal Branding Expert";
 
-        // ── BUTTON ──
+        // BUTTON
         const btn = document.querySelector(".lang-switch");
         if (btn) btn.textContent = isAr ? "EN" : "AR";
 
@@ -189,6 +204,8 @@ window.addEventListener("DOMContentLoaded", function () {
             navToggle.checked = false;
         }
     });
+
+
     // ── PAIN LIST REVEAL ──
     const painItems = document.querySelectorAll("#pain .pain-list li");
 
@@ -204,3 +221,23 @@ window.addEventListener("DOMContentLoaded", function () {
     painItems.forEach(li => painObs.observe(li));
 
 });
+
+
+// ── READ MORE TOGGLE ──
+function toggleText(btn) {
+    const text = btn.previousElementSibling;
+
+    const isExpanded = text.classList.toggle("expanded");
+
+    const lang = document.documentElement.lang;
+
+    btn.textContent = isExpanded
+        ? (lang === "ar" ? "عرض أقل" : "Show Less")
+        : (lang === "ar" ? "عرض المزيد" : "Show More");
+
+    // 🔥 إصلاح الكاروسيل فقط - نفس الكود الأصلي
+    const swiperEl = document.querySelector(".testimonialsSwiper");
+    if (swiperEl && swiperEl.swiper) {
+        swiperEl.swiper.update();
+    }
+}

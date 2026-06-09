@@ -174,35 +174,21 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
     // ── MOBILE MENU ──
-    const hamburger = document.querySelector(".nav-hamburger");
-    const drawer = document.querySelector(".nav-drawer");
-    const drawerLinks = document.querySelectorAll(".nav-drawer a");
+    const navToggle = document.getElementById("nav-toggle");
+const drawer = document.querySelector(".nav-drawer");
+const drawerLinks = document.querySelectorAll(".nav-drawer a");
 
-    if (hamburger && drawer) {
-        hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("open");
-            drawer.classList.toggle("open");
-            document.body.style.overflow = drawer.classList.contains("open") ? "hidden" : "";
-        });
+drawerLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navToggle.checked = false;
+    });
+});
 
-        drawerLinks.forEach(link => {
-            link.addEventListener("click", () => {
-                hamburger.classList.remove("open");
-                drawer.classList.remove("open");
-                document.body.style.overflow = "";
-            });
-        });
-
-        drawer.addEventListener("click", (e) => {
-            if (e.target === drawer) {
-                hamburger.classList.remove("open");
-                drawer.classList.remove("open");
-                document.body.style.overflow = "";
-            }
-        });
+drawer.addEventListener("click", (e) => {
+    if (e.target === drawer) {
+        navToggle.checked = false;
     }
-
-
+});
     // ── PAIN LIST REVEAL ──
     const painItems = document.querySelectorAll("#pain .pain-list li");
 
